@@ -207,11 +207,14 @@
 
         function addValue(buttonValue) {
             document.getElementById("Screen").value = document.getElementById("Screen").value + buttonValue;
+            console.log(typeof(buttonValue));
         }
 
         function giveResult() {
 
-            document.getElementById("Screen").value = eval(document.getElementById("Screen").value); 
+            document.getElementById("Screen").value = eval(document.getElementById("Screen").value);
+            console.log(typeof(document.getElementById("Screen").value));
+            console.log(typeof(document.getElementById("Screen")));
         }
 
         function clearScreen(){
