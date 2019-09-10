@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Analog Clock</title>
+    <style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2rem;
+        color: rgb(112, 165, 145);
+    }
+    .clock {
+        margin-top: 10%;
+        background: #ddd;
+        border-radius: 50%;
+        height: 25rem;;
+        width: 25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid rgb(102, 79, 46);
+        position: relative;
+    }
+    /* Numbers */
+
+    #dot {
+        position: absolute;
+        height: 3px;
+        width: 3px;
+        background: rgb(87, 145, 111);
+        border-radius: 50%;
+    }
+
+    #twelve {
+        position: absolute;
+        top: 0%;
+        right: 46%;
+    }
+    #six {
+        position: absolute;
+        bottom: 0%;
+        right: 47%;
+    }
+    #three {
+        position: absolute;
+        top: 45%;
+        right: 1%;
+    }
+
+    #nine {
+        position: absolute;
+        top: 46%;
+        left: 1%;
+    }
+
+    
+
+    
+    </style>
+</head>
+<body></body>
+    <div class="clock">
+            <div class="pointer-second"></div>
+            <div class="clock-content">
+                    <div id="twelve">12</div>
+            <span id="nine">9</span><span id="dot"></span><span id="three">3</span>
+                    <div id="six">6</div>
+            </div>
+    </div>
+</body>
+</html>
