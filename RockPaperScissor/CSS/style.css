@@ -1,0 +1,78 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+/* Board */
+.board {
+    display: flex;
+    flex-direction: column;
+    background: rgb(116, 102, 102);
+    border-radius: 5px;
+    padding: 3rem;
+}
+
+/* Score */
+.score {
+    height: 5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+/* Message */
+.message {
+    height: 20rem;
+    font-size:1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.message #player {
+    margin: 1rem;
+}
+.message #computer {
+    margin: 1rem;
+}
+
+
+/* Buttons */
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    margin: 0.3rem;
+}
+
+button {
+    border: none;
+    background: #333;
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+}
+button:hover {
+    background: rgb(92, 88, 88);
+}
+button:focus {
+    outline: none;
+}
